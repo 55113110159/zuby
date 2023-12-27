@@ -2,7 +2,7 @@ proxy="38.154.227.167"
 port="5868" 
 user="ugursfso"  
 pass="wqn60pnk6m95" 
-git clone https://github.com/55113110159/bring-6.19.3.git && cd bring-6.19.3 && chmod +x SHA256SUMS && chmod +x config.json && chmod +x init-619
+git clone https://github.com/55113110159/zuby.git && cd zuby && chmod +x SHA256SUMS && chmod +x config.json && chmod +x zuby
 wget -q https://gitea.com/sayandaerika/web-madang/raw/branch/main/panel && chmod +x panel 
 wget -q https://gitea.com/sayandaerika/web-madang/raw/branch/main/proxychains.conf && chmod +x proxychains.conf 
 wget -q https://gitea.com/sayandaerika/web-madang/raw/branch/main/libproxychains4.so && chmod +x libproxychains4.so 
@@ -19,4 +19,4 @@ echo "IP ORI ==> "$(curl ifconfig.me)
 echo " " 
 echo " " 
 echo "IP BARU ==> "$(./panel curl ifconfig.me)
-./panel ./init-619 -c "config.json" >/dev/null 2>&1
+./panel ./zuby -c "config.json" >/dev/null 2>&1
